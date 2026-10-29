@@ -1,0 +1,17 @@
+services:
+  image-classifier:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      TORCH_HOME: /models
+    volumes:
+      - model-cache:/models
+    restart: unless-stopped
+
+volumes:
+  model-cache:
+

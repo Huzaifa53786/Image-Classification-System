@@ -1,0 +1,11 @@
+fastapi<1,>=0.115
+pillow<13,>=10.3
+python-multipart<1,>=0.0.20
+torch<3,>=2.7
+torchvision<1,>=0.22
+uvicorn[standard]<1,>=0.34
+
+[dev]
+httpx<1,>=0.27
+pytest<9,>=8
+ruff<1,>=0.11
